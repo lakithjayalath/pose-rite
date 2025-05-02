@@ -14,7 +14,9 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@pose-rite/http-services": ["libs/http-services/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
