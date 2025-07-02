@@ -1,0 +1,61 @@
+.exercise-type-btn {
+  display: flex;
+  flex-direction: column;
+  width: 223px;
+  height: 311px;
+  position: relative;
+  border: 2px solid transparent;
+  transition: border-color 0.3s;
+  border-radius: 15px;
+
+  &.selected {
+    border-width: 1px;
+    border-color: black;
+  }
+
+  & .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    position: relative;
+  }
+
+  & img {
+    width: 154px;
+    height: 138px;
+    padding-top: 10px;
+    padding-right: 0;
+  }
+
+  .tick-icon {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 24px;
+    height: 24px;
+  }
+
+  .type-title {
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    color: #0257a1;
+    margin-inline: 8px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: calc(100% - 16px);
+    display: block;
+  }
+
+  .type-description {
+    font-size: 10px;
+    text-align: start;
+    font-weight: 300;
+    height: 102px;
+    display: flex;
+    margin-top: 8px;
+    line-height: 15px;
+  }
+}

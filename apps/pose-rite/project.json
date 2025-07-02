@@ -2,7 +2,7 @@
   "name": "pose-rite",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "prefix": "app",
+  "prefix": "pose-rite",
   "sourceRoot": "apps/pose-rite/src",
   "tags": [],
   "targets": {
@@ -20,7 +20,8 @@
           {
             "glob": "**/*",
             "input": "apps/pose-rite/public"
-          }
+          },
+          "apps/pose-rite/src/assets"
         ],
         "styles": ["apps/pose-rite/src/styles.scss"],
         "scripts": [],

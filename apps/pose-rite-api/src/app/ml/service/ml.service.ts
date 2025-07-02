@@ -42,7 +42,6 @@ export class MLService {
     };
     const detector = await poseDetection.createDetector(model, detectorConfig);
     const estimationConfig = {enableSmoothing: true};
-    // const video = 'https://drive.google.com/file/d/1_GIrYaIjucjFnXQ1BRI9U6lxyjQbjFw3/view?usp=sharing';
     const timestamp = performance.now();
 
     // 1. Load image from file

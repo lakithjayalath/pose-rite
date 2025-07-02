@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { NxWelcomeComponent } from './nx-welcome.component';
+import { ExerciseSelectionComponent } from './modules/exercise-selection/exercise-selection.component';
 
 @Component({
-  imports: [NxWelcomeComponent, RouterModule],
-  selector: 'app-root',
+  imports: [ExerciseSelectionComponent, RouterModule],
+  selector: 'pose-rite-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })

@@ -1,0 +1,19 @@
+.canvas-container {
+    position: relative; /* Required for absolute positioning inside */
+    display: inline-block; /* Adjust as needed */
+    align-self: center;
+    
+  }
+  
+  .image-view, .output {
+    display: block; /* Removes extra space under inline elements */
+    width: 40%;    /* Match container width */
+    height: auto;   /* Maintain aspect ratio */
+  }
+  
+  .output {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none; /* Allows clicks to pass through canvas to image */
+  }
