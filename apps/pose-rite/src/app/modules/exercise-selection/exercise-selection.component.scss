@@ -8,7 +8,7 @@
   transition: border-color 0.3s;
   border-radius: 15px;
 
-  &.selected {
+  & .selected {
     border-width: 1px;
     border-color: black;
   }
@@ -57,5 +57,32 @@
     display: flex;
     margin-top: 8px;
     line-height: 15px;
+  }
+}
+
+mat-card {
+  margin-bottom: 16px;
+  border-radius: 15px;
+}
+
+mat-card-content {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+
+  button {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: start;
+  }
+
+  form {
+    width: 100%;
+    padding-top: 8px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
   }
 }

@@ -1,10 +1,17 @@
-import { Component } from '@angular/core';
-import { EXPORT_SELECTION_IMPORTS } from './exercise-selection.imports';
+import { Component, inject } from '@angular/core';
+import { Router } from '@angular/router';
+import { EXCERCISE_SELECTION_IMPORTS } from './exercise-selection.imports';
 
 @Component({
   selector: 'pose-rite-exercise-selection',
-  imports: EXPORT_SELECTION_IMPORTS,
+  imports: EXCERCISE_SELECTION_IMPORTS,
   templateUrl: './exercise-selection.component.html',
   styleUrl: './exercise-selection.component.scss'
 })
-export class ExerciseSelectionComponent {}
+export class ExerciseSelectionComponent {
+  private router = inject(Router);
+
+navigateToFeedback() {
+  this.router.navigate(['/feedback'])
+}
+}

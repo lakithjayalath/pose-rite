@@ -11,7 +11,7 @@ import { take, tap } from 'rxjs';
 export class ResultComponent implements OnInit, AfterViewInit {
   mlService = inject(MLService);
 
-  imagePath = 'assets/burpee.png'
+  imagePath = 'assets/images/burpee.png'
   
   @ViewChild('img') img!: ElementRef<HTMLImageElement>;
   @ViewChild('canvas') canvas!: ElementRef<HTMLCanvasElement>;
